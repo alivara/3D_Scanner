@@ -46,6 +46,7 @@ matplotlib
 ---
 #### **Example**
 ---
+In this test we have tried to crop 3D model based on our ROI and then we have calculated differece of distance by using the compute_point_cloud_distance module. Threshold has been set by using box plot to filter the outliers then by using Heatmap we can find the high deformd area.
 ![example_result](Examples/Figure_1.png)
 
 
