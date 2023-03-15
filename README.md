@@ -46,7 +46,8 @@ matplotlib
 ---
 #### **Example**
 ---
-In this test we have tried to crop 3D model based on our ROI and then we have calculated differece of distance by using the compute_point_cloud_distance module. Threshold has been set by using box plot to filter the outliers then by using Heatmap we can find the high deformd area.
+In this test we have applied some image processing techniques to analyze 3D models. Using the ROI to crop the 3D model and computing the point cloud distance can help identify any deformations or anomalies in the model. Additionally, using the box plot to set a threshold and filter out outliers can help improve the accuracy of the analysis. Finally, the heatmap can help visualize and identify the areas of high deformation in the model. Overall, this approach can help provide valuable insights into the quality and integrity of 3D models.
+
 ![example_result](Examples/Figure_1.png)
 
 
