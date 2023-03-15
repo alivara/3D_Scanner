@@ -125,8 +125,8 @@ def compare_2(pc_1,pc_2):
     o3d.visualization.draw_geometries([pc_1,pc_2]) # show again
 
 # number of valid data: 1 , 6 , 12, 16, 17, 18, 26, 30, 
-pcd1 = o3d.io.read_point_cloud("/home/player/calibration/TOFCamera/scan_0001.ply")
-pcd2 = o3d.io.read_point_cloud("/home/player/calibration/TOFCamera/scan_0030.ply")
+pcd1 = o3d.io.read_point_cloud("./scan_0001.ply")
+pcd2 = o3d.io.read_point_cloud("./scan_0030.ply")
 
 # o3d.visualization.draw_geometries([pcd1])
 T = np.array([[ 1.0, 0.0, 0.0, 0.0],
