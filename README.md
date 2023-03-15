@@ -44,9 +44,10 @@ matplotlib
 
   ```
 ---
-#### Example
+#### **Example**
 ---
 An example of how to use these functions can be found in the example.py file. It loads two point cloud objects, crops them, and visualizes them side by side. It then computes the distances between the point clouds and plots the distances using a line plot, a box plot, and a histogram.
+
 ---
 #### License
 ---
