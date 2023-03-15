@@ -19,9 +19,12 @@ Functions
 
 Usage
 
- 1. Import Open3D, numpy, and matplotlib
-    import open3d as o3d
-    import numpy as np
-    import matplotlib.pyplot as plt
-    from matplotlib import cm
-    from matplotlib.gridspec import GridSpec
+    Import Open3D, numpy, and matplotlib
+
+python
+
+import open3d as o3d
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from matplotlib.gridspec import GridSpec
