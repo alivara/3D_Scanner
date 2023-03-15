@@ -1,4 +1,4 @@
-> # **PhoXi_3D_Scanner**
+> # **PhoXi 3D Scanner**
 ## Table of Contents
 * *Dependencies*
 * *Functions*
