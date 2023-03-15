@@ -1,0 +1,138 @@
+
+
+[elements]
+    [element: 0]
+        element vertex 3186816
+        property float x
+        property float y
+        property float z
+        property float nx
+        property float ny
+        property float nz
+        property uchar red
+        property uchar green
+        property uchar blue
+        property float Texture32
+    [element: 1]
+        element camera 1
+        property float view_px
+        property float view_py
+        property float view_pz
+        property float x_axisx
+        property float x_axisy
+        property float x_axisz
+        property float y_axisx
+        property float y_axisy
+        property float y_axisz
+        property float z_axisx
+        property float z_axisy
+        property float z_axisz
+    [element: 2]
+        element phoxi_frame_params 1
+        property uint frame_width
+        property uint frame_height
+        property uint frame_index
+        property float frame_start_time
+        property float frame_duration
+        property float frame_computation_duration
+        property float frame_transfer_duration
+        property int total_scan_count
+    [element: 3]
+        element camera_matrix 1
+        property float cm0
+        property float cm1
+        property float cm2
+        property float cm3
+        property float cm4
+        property float cm5
+        property float cm6
+        property float cm7
+        property float cm8
+    [element: 4]
+        element distortion_matrix 1
+        property float dm0
+        property float dm1
+        property float dm2
+        property float dm3
+        property float dm4
+        property float dm5
+        property float dm6
+        property float dm7
+        property float dm8
+        property float dm9
+        property float dm10
+        property float dm11
+        property float dm12
+        property float dm13
+    [element: 5]
+        element camera_resolution 1 :[(2064., 1544.)] -- (3186816,)
+        property float width
+        property float height
+    [element: 6]
+        element frame_binning 1
+        property float horizontal
+        property float vertical
+
+
+[Project info]
+    [Raw]
+        [max and min bounding]
+            max bounding: [1114.90197754  870.13452148 2733.78344727]
+            min bounding: [-1231.85766602  -842.19122314     0.        ]
+        [ROI bounding]
+            x_min, x_max = -400, 200.0   
+            y_min, y_max = -250.0, 150.0  
+            z_min, z_max = 0.0, 2700.0 
+
+    [Raw2]
+        [max and min bounding]
+            max bounding: [1149.12731934  977.49456787 3242.05249023]
+            min bounding: [-1347.38745117  -930.30639648     0.        ] 
+        [ROI bounding]
+            x_min, x_max = -300, 600.0   
+            y_min, y_max = -200.0, 50.0  
+            z_min, z_max = 0.0, 2700.0 
+
+
+    [Raw2-transformed] 
+        [max and min bounding]
+            max bounding: [1149.12731934  930.30639648    0.        ]
+            min bounding: [-1347.38745117  -977.49456787 -3242.05249023] 
+        [ROI bounding]
+            x_min, x_max = -300, 600.0   
+            y_min, y_max = -50.0, 250.0  
+            z_min, z_max = -3242, 0.0 
+        [transform matrix]
+            T = [[ 1.0, 0.0, 0.0, 0.0],
+                [ 0.0, -1.0, 0.0, 0.0],
+                [ 0.0, 0.0, -1.0, 0.0],
+                [ 0.0, 0.0, 0.0, 1.0]]           
+
+[analyze source]
+    [open3d]
+        http://www.open3d.org/docs/release/tutorial/geometry/pointcloud.html
+        http://www.open3d.org/docs/release/python_api/open3d.geometry.PointCloud.html?highlight=norm#open3d.geometry.PointCloud.normalize_normals
+        http://www.open3d.org/docs/release/python_api/open3d.geometry.PointCloud.html?highlight=norm#open3d.geometry.PointCloud.estimate_normals
+        http://www.open3d.org/docs/latest/python_api/open3d.geometry.PointCloud.html?highlight=compute_point_cloud_distance#open3d.geometry.PointCloud.compute_point_cloud_distance
+        http://www.open3d.org/docs/release/python_api/open3d.geometry.PointCloud.html?highlight=crop#open3d.geometry.PointCloud.crop
+        http://www.open3d.org/docs/release/python_api/open3d.geometry.PointCloud.html?highlight=get_axis_aligned_bounding_box#open3d.geometry.PointCloud.get_axis_aligned_bounding_box
+        http://www.open3d.org/docs/latest/python_example/visualization/index.html
+        http://www.open3d.org/docs/latest/tutorial/Basic/transformation.html (transforming)
+        http://www.open3d.org/docs/release/python_api/open3d.geometry.Geometry3D.html?highlight=transform#open3d.geometry.Geometry3D.transform  (transforming the 3D image)
+        https://github.com/isl-org/Open3D/blob/master/examples/python/geometry/point_cloud_distance.py
+        http://www.open3d.org/docs/latest/python_api/open3d.io.read_point_cloud.html?highlight=read_point_cloud#open3d.io.read_point_cloud
+
+    [web]
+        https://stackoverflow.com/questions/2369492/generate-a-heatmap-using-a-scatter-data-set
+        https://stackoverflow.com/questions/66866952/open3d-compute-distance-between-mesh-and-point-cloud
+        https://towardsdatascience.com/plot-organization-in-matplotlib-your-one-stop-guide-if-you-are-reading-this-it-is-probably-f79c2dcbc801
+        https://matplotlib.org/stable/gallery/subplots_axes_and_figures/zoom_inset_axes.html#sphx-glr-gallery-subplots-axes-and-figures-zoom-inset-axes-py
+        https://www.w3resource.com/python-exercises/numpy/python-numpy-exercise-109.php (numpy to image)
+        https://www.brainvoyager.com/bv/doc/UsersGuide/CoordsAndTransforms/SpatialTransformationMatrices.html (transform matrix)
+
+    [numpy]
+        https://numpy.org/doc/stable/reference/generated/numpy.trim_zeros.html
+
+    [matplotlib]
+        https://matplotlib.org/stable/gallery/statistics/hist.html
+        https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.boxplot.html
