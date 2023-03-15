@@ -46,6 +46,7 @@ matplotlib
 ---
 #### **Example**
 ---
+![example_result](Examples/Figure_1.png)
 
 
 ---
