@@ -43,7 +43,7 @@ matplotlib
 
 #### **Example**
 ---
-In this test we have applied some image processing techniques to analyze 3D models. Using the ROI to crop the 3D model and computing the point cloud distance can help identify any deformations or anomalies in the model. Additionally, using the box plot to set a threshold and filter out outliers can help improve the accuracy of the analysis. Finally, the heatmap can help visualize and identify the areas of high deformation in the model. Overall, this approach can help provide valuable insights into the quality and integrity of 3D models.
+In this test we have applied some image processing techniques to analyze 3D models. Using the ROI and defined a transformer matrix to crop the 3D model and computing the point cloud distance can help identify any deformations or anomalies in the model. Additionally, using the box plot to set a threshold and filter out outliers can help improve the accuracy of the analysis. Finally, the heatmap can help visualize and identify the areas of high deformation in the model. Overall, this approach can help provide valuable insights into the quality and integrity of 3D models.
 
 ![example_result](Examples/Figure_1.png)
 
