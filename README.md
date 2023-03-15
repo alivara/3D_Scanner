@@ -5,14 +5,14 @@
 * *Usage*
 * *Example*
 * *License*
----
+
 ### **Dependencies**
 ```
 Open3D v0.13.0 or later
 numpy
 matplotlib
 ```
----
+
 #### **Functions**
 ---
 - main_image(pcd): This function takes a point cloud object as input and crops it based on its bounding box. It then visualizes the cropped point cloud using Open3D.
